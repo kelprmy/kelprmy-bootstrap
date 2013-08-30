@@ -33,23 +33,30 @@
       <p><?php _e('Sorry, this post is gone... Contact me if you miss something.'); ?></p>
     <?php endif; ?>
 
+	<!--Back button-->
+	<a href="http://guriandersen.no/my-blog/"><button type="submit" class="btn btn-inverse pull-right"><i class="icon-rotate-left"></i> Back </button></a>
+	</br>
+
+		<!--Archive-->
 <h2>Post Archive</h2>
 <div id="container">
 	<div id="content" role="main">
 
 	<div class="row">
 	<div class="span4">
-		<h2>by Date:</h2>
-		<ul>
-			<?php wp_get_archives('type=monthly'); ?>
-		</ul>
+		<h3>by Date:</h3>
+		<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+  		<option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
+				  <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
+		</select>
 	</div> <!--#span-->
 
 	<div class="span4">		
-		<h2>by Subject:</h2>
+		<h3>by Subject:</h3>
 		<ul>
 			 <?php wp_list_categories(); ?>
 		</ul>
+
 	</div> <!--#span-->
 	</div> <!--#row-->
 
