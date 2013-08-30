@@ -8,8 +8,8 @@
 
  <!-- Post info -->
 <div class="container-fluid well"> 	
-	<p>Published on <em><?php the_time('l, F jS, Y'); ?></em></br>
-		Categories: <?php
+	<p><i class="icon-calendar"></i> <em><?php the_time('l, F jS, Y'); ?></em></br>
+		<i class="icon-asterisk"></i> <?php
 				$categories = get_the_category();
 				$separator = ', ';
 				$output = '';
@@ -20,8 +20,8 @@
 				echo trim($output, $separator);
 				}
 			?></br>
-		<?php the_tags( 'Tags: ', ', ' ); ?>  </br>
-		Comments: <?php comments_number('None', '1 comment','% comments'); ?>	
+		<i class="icon-tags"></i> <?php the_tags( ' ', ', ' ); ?>  </br>
+		<i class="icon-comments-alt"></i> <?php comments_number('None', '1 comment','% comments'); ?>	
 	</p>
 </div>
   	
