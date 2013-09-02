@@ -31,4 +31,11 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="span8">
+
 <?php get_footer(); ?>
+
+  </div>
+</div>
+

@@ -1,4 +1,10 @@
+<!DOCTYPE html> 
+<html lang="en">
+
   <head>
+	<!-- Explorer compability -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
@@ -10,15 +16,13 @@
     
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
 
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
   </head>
   <body>
-  <!--Fork on GitHub-->
-	<a href="https://github.com/kelprmy/kelprmy-bootstrap" target="blank"><img style="position: absolute; top: 2.5em; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -49,3 +53,6 @@
   </div>
 
   <div class="container">
+  
+<p><em>This page is currently not IExplorer friendly - I'm working on it! Consider giving <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Mozilla Firefox</a> a try...</em></p>
+<hr>

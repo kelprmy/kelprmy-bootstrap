@@ -33,7 +33,7 @@
       <p><?php _e('Sorry, this post is gone... Contact me if you miss something.'); ?></p>
     <?php endif; ?>
 
-<!--Archive-->
+<!-- Archive -->
 <h2>Post Archive</h2>
 <div id="container">
 	<div id="content" role="main">
@@ -45,15 +45,15 @@
   		<option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
 				  <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
 		</select>
-	</div> <!--#span-->
+	</div> <!-- #span -->
 
 	<div class="span4">		
 		<h3>by Subject:</h3>
 		<ul>
 			 <?php wp_list_categories(); ?>
 		</ul>
-	</div> <!--#span-->
-	</div> <!--#row-->
+	</div> <!-- #span -->
+	</div> <!-- #row -->
 
 	</div><!-- #content -->
 </div><!-- #container -->
@@ -66,5 +66,10 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="span8">
 
 <?php get_footer(); ?>
+
+  </div>
+</div>

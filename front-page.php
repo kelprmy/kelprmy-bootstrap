@@ -8,6 +8,11 @@
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
 	<?php endif; ?>
 
-
+<div class="row">
+  <div class="span12">
 
 <?php get_footer(); ?>
+
+  </div>
+</div>
+
