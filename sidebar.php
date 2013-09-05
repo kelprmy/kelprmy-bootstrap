@@ -1,5 +1,3 @@
-
-
 <div class="container-fluid">
 <div class="row-fluid">
  <div class="span3">
@@ -11,7 +9,7 @@
 
   </div><!-- /.well -->
  </div><!-- /span -->
-</div><!--/row-->
+</div><!--/row -->
 
 </div><!-- /.fluid-container -->
  
