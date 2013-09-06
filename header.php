@@ -29,38 +29,40 @@
 
 <body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top"> <!-- navbar -->
-    <div class="navbar-inner"> <!-- nav inner -->
-      <div class="container"> <!-- container -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-		<!-- Brand -->
-        <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+<div class="container">  
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+ 
+    <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+  </div>
 
-        <div class="nav-collapse collapse"> <!-- nav-collapse -->
-          <ul class="nav"> <!-- nav -->
-
-            <?php wp_list_pages(array('title_li' => '', 'exclude' => '5,53')); ?>
-			
-			<li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <?php wp_list_pages(array('title_li' => '', 'exclude' => '5,53')); ?>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs <b class="caret"></b></a>
+        <ul class="dropdown-menu">
                         <li><a href="http://kelprmy.wpengine.com/?page_id=53">My blog</a></li>
                         <li><a href="http://blog.marinbiologene.no" target="_blank">Marinbiobloggen (Norwegian)</a></li>
 						<li><a href="http://oceanviewers.tumblr.com/" target="_blank">Ocean Viewers</a></li>
-                    </ul>
-            </li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div><!-- /.navbar-collapse -->
+</div><!-- container -->
+</nav>
 
-          </ul> <!-- /nav -->
-        </div> <!-- /nav-collapse -->
-      
-	   </div> <!-- /container -->
-    </div> <!-- /nav-inner -->
-  </div> <!-- /navbar -->
-
-<div class="container"> <!-- container (ends in footer) -->
-  
+<div class="row">  
+<div class="container">
 	<p><i class="icon-exclamation-sign icon-large icon-muted pull-left"></i><em>This page is currently not IExplorer friendly - I'm working on it! Consider giving <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Mozilla Firefox</a> a try...</em></p>
+</div>
+</div>

@@ -10,38 +10,97 @@ Tags: responsive, white, bootstrap
 License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
-This is an example theme to go along with the Treehouse blog post on <a href="http://teamtreehouse.com/how-to-build-a-responsive-wordpress-site-with-twitter-bootstrap">How to Build a Simple Responsive WordPress Site Using Twitter Bootstrap</a>.
+This is an example theme to go along with the Treehouse blog post on <a href="http://teamtreehouse.com/how-to-build-a-responsive-wordpress-site-with-twitter-bootstrap">How to Build a Simple Responsive WordPress Site Using Twitter Bootstrap</a>. Modified to fit Bootstrap 3.0.
 */
 
 @import url('bootstrap/css/bootstrap.css');
-@import url('bootstrap/css/bootstrap-responsive.css');
-
-
-body {
-	padding-top: 60px;
-	padding-bottom: 40px;
-}
 
 .wpcf7-form .control-group p {
   line-height: 1px;
 	margin: 0;
 }
+body { padding-top: 70px; }
 
-.sidebar-nav-fixed {
-    position:fixed;
-    top:60px;
-    width:21.97%;
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
 }
 
-@media (max-width: 767px) {
-    .sidebar-nav-fixed {
-        position:static;
-        width:auto;
-    }
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
-@media (max-width: 979px) {
-    .sidebar-nav-fixed {
-        top:70px;
-    }
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
 }
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
