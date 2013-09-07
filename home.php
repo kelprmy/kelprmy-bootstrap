@@ -32,7 +32,7 @@
 	</div>
 
 	<div class="row">
-		    <p><?php the_content('Read more...'); ?>			
+		    <p><?php the_content('Read more <i class="icon-play-circle icon-large"></i>'); ?>			
 			</br><hr></p>
 			<?php endwhile; else: ?>
 			  <p><?php _e('Sorry, no posts.'); ?></p>
