@@ -64,6 +64,6 @@
 <!-- footer -->
 <div class="row">
 	<?php get_footer(); ?>
-</div> <!-- row -->
+</div> 
 
 </div> <!-- container -->

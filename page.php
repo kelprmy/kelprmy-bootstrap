@@ -19,6 +19,8 @@
 </div>
 
 <div class="container">
+<div class="row">
 	<?php get_footer(); ?>
+</div>
 </div>
 

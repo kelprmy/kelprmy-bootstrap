@@ -15,11 +15,144 @@ This is an example theme to go along with the Treehouse blog post on <a href="ht
 
 @import url('bootstrap/css/bootstrap.css');
 
+body { padding-top: 70px; }
+
+/* To improve wpcf7 contact form layout
+-------------------------------------------------------------- */
 .wpcf7-form .control-group p {
   line-height: 1px;
-	margin: 0;
+  margin: 0;
 }
-body { padding-top: 70px; }
+.contact-form input:-moz-placeholder,
+.contact-form textarea:-moz-placeholder {
+  color: #999999;
+}
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  color: #999999;
+}
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #999999;
+}
+.contact-form input::-webkit-input-placeholder, 
+.contact-form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,{
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.contact-form-control input [disabled],
+.contact-form-control input [readonly],
+.contact-form-control textarea [disabled],
+.contact-form-control textarea [readonly],
+fieldset[disabled] .wpcf7-form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textarea.contact-form-control {
+  height: auto;
+}
+
+.contact-form input[type="submit"] {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.contact-form input[type="submit"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.contact-form input[type="submit"].disabled,
+.contact-form input[type="submit"][disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.contact-form input[type="submit"] {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:focus,
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+.contact-form input[type="submit"]:active,
+.contact-form input[type="submit"].active {
+  background-image: none;
+}
+.contact-form input[type="submit"].disabled,
+.contact-form input[type="submit"][disabled],
+.contact-form input[type="submit"].disabled:hover,
+.contact-form input[type="submit"][disabled]:hover,
+.contact-form input[type="submit"].disabled:focus,
+.contact-form input[type="submit"][disabled]:focus,
+.contact-form input[type="submit"].disabled:active,
+.contact-form input[type="submit"][disabled]:active,
+.contact-form input[type="submit"].disabled.active,
+.contact-form input[type="submit"][disabled].active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
 
 /* =WordPress Core
 -------------------------------------------------------------- */
