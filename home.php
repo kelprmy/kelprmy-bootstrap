@@ -37,6 +37,8 @@
 			<?php endwhile; else: ?>
 			  <p><?php _e('Sorry, no posts.'); ?></p>
 			<?php endif; ?>
+			<?php next_posts_link('Older Posts'); ?>
+			<?php previous_posts_link('Newer Posts'); ?>			
 	</div>
 	
 </div><!-- col-md- (8) -->
