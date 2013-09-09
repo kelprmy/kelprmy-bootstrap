@@ -46,7 +46,7 @@
 <!-- sidebar -->
 
   <div class="col-md-4">
-  <div class="affix-nav">
+  <div class="affix-nav hidden-sm hidden-xs">
     <?php get_sidebar(); ?>   
   </div>
   </div>
