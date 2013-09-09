@@ -44,8 +44,11 @@
 </div><!-- col-md- (8) -->
 
 <!-- sidebar -->
+
   <div class="col-md-4">
+  <div class="affix-nav">
     <?php get_sidebar(); ?>   
+  </div>
   </div>
 
 </div> <!-- row main -->

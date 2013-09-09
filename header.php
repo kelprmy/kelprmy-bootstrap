@@ -59,6 +59,10 @@
         </ul>
       </li>
     </ul>
+	<ul class="nav navbar-nav navbar-right">
+      					<li><a href="https://twitter.com/kelprmy"><i class="icon-twitter icon-large"></i></a></li>
+      					<li><a href="http://feeds.feedburner.com/kelpRmy"><i class="icon-rss icon-large"></i></a></li>
+    </ul>    
     
   </div><!-- /.navbar-collapse -->
 </div><!-- container -->

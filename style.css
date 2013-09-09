@@ -17,12 +17,17 @@ This is an example theme to go along with the Treehouse blog post on <a href="ht
 
 body { padding-top: 70px; }
 
-/* To improve wpcf7 contact form layout
--------------------------------------------------------------- */
-.wpcf7-form .control-group p {
-  line-height: 1px;
-  margin: 0;
+.affix-nav {
+  position: fixed;
+  width: 100%;
+  max-width; 350px
+  top: 5;
 }
+
+
+/* To improve contact form layout
+-------------------------------------------------------------- */
+
 .contact-form input:-moz-placeholder,
 .contact-form textarea:-moz-placeholder {
   color: #999999;
