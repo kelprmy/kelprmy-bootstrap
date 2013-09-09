@@ -13,6 +13,7 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 This is an example theme to go along with the Treehouse blog post on <a href="http://teamtreehouse.com/how-to-build-a-responsive-wordpress-site-with-twitter-bootstrap">How to Build a Simple Responsive WordPress Site Using Twitter Bootstrap</a>. Modified to fit Bootstrap 3.0.
 */
 
+
 @import url('bootstrap/css/bootstrap.css');
 
 body { padding-top: 70px; }
