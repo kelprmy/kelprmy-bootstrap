@@ -25,7 +25,69 @@ body { padding-top: 70px; }
   top: 5;
 }
 
+/* customized jumbotron
+-------------------------------------------------------------- */
+.jumbotron {
+background-image: url('background.jpg');
+background-position:center;
+padding:0;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.jumbotron a {
+    color: orangered;
+}
+.jumbotron img {
+    width:50%;
+} 
 
+/* customized link and button colors
+-------------------------------------------------------------- */
+a {
+    color: gray;
+}
+a:hover, a:focus {
+    color: orangered;
+    text-decoration: underline;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: gray;
+  border-color: dimgray;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: orangered;
+  border-color: red;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: orangered;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: orangered;
+}
+
+/* Customized code display
+-------------------------------------------------------------- */
+code {
+  color: white;
+  background-color: black;
+}
+pre {
+  max-width: 600px;
+}
 /* To improve contact form layout
 -------------------------------------------------------------- */
 

@@ -82,6 +82,6 @@
 <!-- footer -->
 <div class="container">
 <div class="row">
-<?php get_footer(); ?>
-</div> 
-</div>
+<div class="col-md-8"> <!-- ends in footer -->
+	<?php get_footer(); ?>
+

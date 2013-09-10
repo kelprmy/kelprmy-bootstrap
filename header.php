@@ -68,8 +68,9 @@
 </div><!-- container -->
 </nav>
 
-<div class="row">  
+<div class="row">
 <div class="container">
-	<p><i class="icon-exclamation-sign icon-large icon-muted pull-left"></i><em>This page is currently not IExplorer friendly - I'm working on it! Consider giving <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Mozilla Firefox</a> a try...</em></p>
+<p><i class="icon-exclamation-sign icon-large icon-muted pull-left"></i><em>This page is not always IExplorer friendly - I'm working on it! Consider giving <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Mozilla Firefox</a> a try...</em></p>
 </div>
 </div>
+

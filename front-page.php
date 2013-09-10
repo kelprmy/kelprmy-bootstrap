@@ -20,7 +20,7 @@
 </div>
 </div>
 
-<!-- Main hero unit from front-page content -->
+<!-- Main unit for front-page content -->
 
 <div class="jumbotron">
 <div class="container">
@@ -30,8 +30,13 @@
 		  	<?php the_content(); ?>
 
 		<?php endwhile; else: ?>
-			<p><?php _e('Uups, not working right now. Come back later.'); ?></p>
+			<p><?php _e('Uups, something is very wrong. Please contact me.'); ?></p>
 		<?php endif; ?>
+	
+	<div class="visible-xs visible-sm">
+		<p>Here's a snapshot of me: <a href="http://guriandersen.no/wp-content/uploads/2013/09/guriBWcrop.jpg"><i class="icon-camera-retro icon-large"></i></a></p>
+	</div>
+
 	</div> <!-- col-md-12 -->
 </div> <!-- /row -->
 </div> <!-- /container -->
@@ -41,7 +46,9 @@
 <div class="container">
 
 <div class="row">
+<div class="col-md-12">
 	<h2>More Personal:</h2>
+</div>
 </div>
 
 <div class="row">
@@ -60,10 +67,11 @@
 		<p>Pixelized comments on clouds, oceans, buildings, mountains, love, hate and the life of animals and others. That's right, you just gotta love it... </p>
 	</div> <!-- col-md- -->
 </div> <!-- row -->
+</div> <!-- container -->
 
 <!-- footer -->
+<div class="container">
 <div class="row">
-	<?php get_footer(); ?>
-</div> 
-
-</div> <!-- container -->
+<div class="col-md-12"> <!-- ends in footer -->
+		<?php get_footer(); ?>
+	

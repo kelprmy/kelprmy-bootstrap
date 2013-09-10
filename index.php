@@ -30,8 +30,11 @@
   </div> <!-- col-md-8-->
 
 <!-- sidebar -->
+
   <div class="col-md-4">
-	<?php get_sidebar(); ?>	
+  <div class="affix-nav hidden-sm hidden-xs">
+    <?php get_sidebar(); ?>   
+  </div>
   </div>
 
 </div>  
@@ -40,7 +43,7 @@
 <!-- footer -->
 <div class="container">
 <div class="row">
+<div class="col-md-8"> <!-- ends in footer -->
 	<?php get_footer(); ?>
-</div>
-</div>
+
 

@@ -47,8 +47,11 @@
 </div><!-- col-md- (8) -->
 
 <!-- sidebar -->
+
   <div class="col-md-4">
+  <div class="affix-nav hidden-sm hidden-xs">
     <?php get_sidebar(); ?>   
+  </div>
   </div>
 
 </div> <!-- row main -->
@@ -82,6 +85,6 @@
 <!-- footer -->
 <div class="container">
 <div class="row">
-<?php get_footer(); ?>
-</div> 
-</div>
+<div class="col-md-8"> <!-- ends in footer -->
+	<?php get_footer(); ?>
+
