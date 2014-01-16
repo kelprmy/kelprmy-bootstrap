@@ -6,13 +6,12 @@
 <!-- main content --> 
 <div class="col-md-8">
 
-	<div class="row">
+	
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	</div> <!-- row -->
+
 	
 			<!-- Post info -->
-	<div class="row"> 	
 			<div class="well"> 	
 				<p><i class="icon-time"></i> <em><?php the_time('l, F jS, Y'); ?></em></br>
 					<i class="icon-asterisk"></i> <?php
@@ -29,9 +28,8 @@
 					<i class="icon-comments-alt"></i> <?php comments_number('None', '1 comment','% comments'); ?>	
 				</p>
 			</div> <!-- well -->
-	</div>
 
-	<div class="row">
+
 		    <p><?php the_content('Read more <i class="icon-play-circle icon-large"></i>'); ?>			
 			</br><hr></p>
 			<?php endwhile; else: ?>
@@ -39,7 +37,6 @@
 			<?php endif; ?>
 			<?php next_posts_link('Older Posts'); ?>
 			<?php previous_posts_link('Newer Posts'); ?>			
-	</div>
 	
 </div><!-- col-md- (8) -->
 
@@ -56,9 +53,9 @@
 	
 <div class="container">
 	<!-- Archive -->
-	<div class="row">
+
 		<h2>Post Archive</h2>
-	</div> 
+
 
 	<div class="row">
 		<div class="col-md-4">
